@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home - Enrollment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <!--  <nav>
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+      <h1>Bright Future School</h1>
+    </nav> -->
+
+   
+   <nav>
+    <h2>Bright Future School</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+   
+    <h2>Welcome to Student Enrollment System</h2>
+
+    <div class="card">
+      <input id="name" placeholder="Student Name" />
+      <input id="age" placeholder="Age" />
+      <input id="grade" placeholder="Grade Level" />
+
+      <button onclick="enrollStudent()">Enroll Student</button>
+
+      <p id="error" style="color: red"></p>
+      <p id="welcome"></p>
+
+      <div id="summary"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

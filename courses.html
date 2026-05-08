@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>Bright Future School</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="container">
+
+  <h1>Available Courses</h1>
+
+  <div>
+    <button onclick="filterCourses('all')">All</button>
+    <button onclick="filterCourses('10')">Grade 10</button>
+    <button onclick="filterCourses('11')">Grade 11</button>
+  </div>
+
+  <div id="coursesContainer"></div>
+
+  <h3>Add New Course</h3>
+
+  <input id="cname" placeholder="Course Name">
+  <input id="cinstructor" placeholder="Instructor">
+  <input id="cgrade" placeholder="Grade">
+  <input id="cdesc" placeholder="Description">
+  <button onclick="addCourse()">Add Course</button>
+
+  <div id="details"></div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
